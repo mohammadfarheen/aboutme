@@ -27,17 +27,17 @@ body {
 	background-color: lightyellow;
 	}      
 	
-	#nam
+	#github
 	{
-	  color: lightblue;   
+	  color: lightgreen;   
 	}
 	
-	#new
+	#linkedin
 	{
-	  color: lightblue;
+	  color: lightgreen;
 	}
 	
-	.para
+	.tg
 	{
 	color: red;
 	}
@@ -45,12 +45,12 @@ body {
 	section {
 	  margin: 1rem;
 	  padding: 2rem;
-	  background-color: lightblue;
+	  background-color: lightyellow;
 	  border-radius: 2em;
 	}
 	
 	.bgimg {
-	  background-image: url("https://github.com/prashanthr036/aboutme/blob/master/Back.jpg?raw=true");
+	  background-image: url("https://github.com/mohammadfarheen/aboutme/blob/master/IMG20190209013452.jpg?raw=true");
 	  height: 100%;
 	  position: relative;
 	  opacity: 0.85;
@@ -60,10 +60,9 @@ body {
 	  background-attachment: fixed; /* fixed in viewport */
 	}
 	
-	.importanat
+	.test
 	{
-	       position: relative;
-	       font-size: 15px;
+	       color: red;
 	}
 	
 	.flex-container 
