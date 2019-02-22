@@ -88,7 +88,7 @@
          <input type = "button" onclick = "sayHello()" value = "Say Hie" /> 
                     </div>
                     <br>
-					<br>
+<br>
                     <div class="text-center text-md-left">
                             <h3 class="h1-responsive font-weight-bold text-left my-4">jQuery and Ajax Reponse </h3>
                         <p>This is a paragraph which can be hided.</p>
@@ -97,15 +97,28 @@
                         <button class="btn2" >hide</button>
                       </div>
                       <br>
-                      <br>
-                      
-                      
-                      
-<br/>
+                     
 
                 </div>
 
             </div>
+	<br>
+
+                <br>
+                <h3 class="h1-responsive font-weight-bold text-left my-4">Ajax Response Event</h3>
+                <button id="simpbutt" class="btn btn-primary">Mouse over to see the Event</button>
+                <p id="simpsons"></p>
+<!--
+                <br>
+                <div id="demo">
+                        <h3 class="h1-responsive font-weight-bold text-left my-4">Ajax Response Event 1</h3>
+                        <button type="button" onclick="loadDoc()">Change Content</button>
+                        </div>
+-->
+            </div>
+
+        </div>
+
 			
 			
 
@@ -115,6 +128,29 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://code.jquery.com/qunit/qunit-2.9.1.js"></script>
 <script src = "query.js"></script>
+	
+	   <div>
+                        
+                        <script>
+                        function loadDoc() {
+
+                            var str="AJAX stands for Asynchronous JavaScript And XML.";
+                          var xhttp = new XMLHttpRequest();
+                          xhttp.onreadystatechange = function() {
+                            if (this.readyState == 4 && this.status == 200) {
+                              document.getElementById("demo").innerHTML =
+                              this.responseText;
+                            }
+                          };
+                          xhttp.open("GET","index.txt", true);
+                          
+                          xhttp.send();
+                        }
+                        </script>
+
+
+
+
 
 <!--
 <script>
@@ -148,6 +184,14 @@
             window.alert("The Circumference of Circle is: " + circum);
         }
     </scrpt>
+	    <!-- JQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.2.1/js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.7.3/js/mdb.min.js"></script>
 
 
 
