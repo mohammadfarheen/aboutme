@@ -12,20 +12,15 @@
 <body>
     <div id="qunit"></div>
     <div id="qunit-fixture"></div>
-    <script>
-    function isValid(str, elementID) {
-            const regex = /^(A|B|C|D|F|a|b|c|d|f)$/;
-            console.log("Element ID" + elementID);
-            if (!regex.test(str)) {
-                //document.getElementById(elementID).innerHTML = validation_msg;
-                return false;
-            }
-            else {
-                // document.getElementById(elementID).innerHTML = '';
-                return true;
-            }
+     <script>
+        function calCirc() 
+        {
+            var radius = document.forms["calculate-form"]["radius"].value;
+           
+            var circum = 2*3.14 * radius;
+            window.alert("The Circumference of Circle is: " + circum);
         }
-    </script>
+    </scrpt>
     <script>
         QUnit.test("Validate Grade function with valid input", function (assert) {
             assert.equal(isValid("A", "grade1_msg"), true, "A is a Valid Grade so the test should pass");
