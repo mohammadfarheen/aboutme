@@ -1,5 +1,5 @@
 function sayHello() 
 {
-    alert("Welcome To Javascript");
+    alert("Welcome To Webapps");
 }
          
