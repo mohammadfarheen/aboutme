@@ -3,31 +3,31 @@
 
 QUnit.test("TestCircle",function(assert)
 {
-    var res=area(5);
-    assert.equal(res, "78.5" ,"area of circle is  78.5");
+    var res=circumference(10);
+    assert.equal(res, "62.8" ,"circumference of circle is  62.8");
 });
 
 QUnit.test("TestCircle",function(assert)
 {
-    var res=area(6);
-    assert.equal(res, "113.03999999999999" ,"area of circle is  113.03999999999999");
+    var res=circumference(4);
+    assert.equal(res, "25.12" ,"circumference of circle is  25.12");
 
-});
-
-QUnit.test("TestCircle",function(assert)
-{
-    var res=area(3);
-    assert.equal(res, "28.259999999999998" ,"area of circle is  28.259999999999998");
 });
 
 QUnit.test("TestCircle",function(assert)
 {
     var res=area(7);
-    assert.equal(res, "153.86" ,"area of circle is  153.86");
+    assert.equal(res, "43.96" ,"circumference of circle is  43.96");
+});
+
+QUnit.test("TestCircle",function(assert)
+{
+    var res=circumference(6);
+    assert.equal(res, "37.68" ,"circumference of circle is  37.68");
 });
 
 QUnit.test ("TestCircle",function(assert)
 {
-    var res=area(8);
-    assert.equal(res, "200.96" ,"area of circle is  200.96");
+    var res=circumference(9);
+    assert.equal(res, "56.52" ,"circumference of circle is  56.52");
 });
