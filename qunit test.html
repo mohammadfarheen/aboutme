@@ -13,26 +13,23 @@
     <div id="qunit"></div>
     <div id="qunit-fixture"></div>
      <script>
-        function calCirc() 
+        function calCirc(radius) 
         {
-            var radius = document.forms["calculate-form"]["radius"].value;
-           
-            var circum = 2*3.14 * radius;
-            window.alert("The Circumference of Circle is: " + circum);
+            valNum=parseInt(radius);  
+            var circum = 2*3.14 * valNum;
+            return circum;
         }
-    </scrpt>
+    </script>
          
     <script>
-        let value=calculatecircumference(10);
-        QUnit.test("test valid inout",function(assert) {
+        
+        QUnit.test("calCirc",function(assert) {
           
-            assert.equal(isValid(value,454,"hello");
-            });
-
-        let value=calculatecircumference(7);
-        QUnit.test("test valid inout",function(assert) {
-          
-            assert.equal(isValid(value,317.8,"hello");
+            assert.equal(calcirc(3),18.84,"circumference is 18.84");
+              assert.equal(calcirc(10),62.8,"circumference is 62,.8");
+              assert.equal(calcirc(7),43.96,"circumference is 43.96");
+              assert.equal(calcirc(2),12.56,"circumference is 12.56");
+              assert.equal(calcirc(6),37.68,"circumference is 37.68");
             });
     </script>
 </body>
