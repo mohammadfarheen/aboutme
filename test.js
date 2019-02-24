@@ -34,6 +34,6 @@ QUnit.test ("TestCircle",function(assert)
 QUnit.test("TestCircle",function(assert)
 {
     var res=circumference(-2);
-    assert.equal(res, "-12.56" ,"circumference of circle is  -12.56");
+    assert.throw(res, "-12.56" ,"circumference of circle is  -12.56");
 
 });
